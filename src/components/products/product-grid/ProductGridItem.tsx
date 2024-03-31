@@ -13,7 +13,7 @@ export const ProductGridItem = ({product}:Props) => {
 
   return (
     <div className="rounded-md overflow-hidden fade-in">
-      <Link href={`/produc/${product.slug}`}>
+      <Link href={`/product/${product.slug}`}>
 
       <Image 
       src={`/products/${displayImage}`} 
@@ -27,7 +27,7 @@ export const ProductGridItem = ({product}:Props) => {
       </Link>
 
       <div className="p-4 flex flex-col">
-        <Link href={`/produc/${product.slug}`} className="hover:text-blue-600">{product.title}</Link>
+        <Link href={`/product/${product.slug}`} className="hover:text-blue-600">{product.title}</Link>
         <span className="font-bold">${product.price}</span>
       </div>
     </div>
