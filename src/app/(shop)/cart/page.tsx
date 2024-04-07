@@ -10,7 +10,7 @@ const productsInCart = [
 ]
 
 
-export default function () {
+export default function CartPage () {
 
 
 

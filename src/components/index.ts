@@ -20,3 +20,5 @@ export * from './product/slideshow/ProductMobileSlideshow'
 
 
 export * from './ui/footer/Footer'
+
+export * from './ui/pagination/Pagination'

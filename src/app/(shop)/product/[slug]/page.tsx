@@ -12,7 +12,7 @@ interface Props {
 
 
 
-export default function ({params}:Props) {
+export default function ProductSlugPage ({params}:Props) {
   const { slug } = params
   const product:Product  = (initialData.products.find(item => item.slug === slug) as any) as Product
   if (!product) {
