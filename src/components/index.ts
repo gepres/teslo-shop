@@ -23,3 +23,5 @@ export * from './product/stock-label/StockLabel'
 export * from './ui/footer/Footer'
 
 export * from './ui/pagination/Pagination'
+
+export * from './Provider/Provider'
