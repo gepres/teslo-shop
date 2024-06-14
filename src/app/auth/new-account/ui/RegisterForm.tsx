@@ -31,10 +31,10 @@ export const RegisterForm = () => {
 
     const {name , email, password} = data 
 
-    console.log({name , email, password});
+    // console.log({name , email, password});
 
     const res = await registerUser(name , email, password)
-    console.log(res);
+    // console.log(res);
     
     if(!res.ok) {
       setErrorMessage(res.message)
