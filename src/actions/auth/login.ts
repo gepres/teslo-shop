@@ -12,8 +12,8 @@ export async function authenticate(
 ) {
   try {
     sleep()
-    console.log('data', formData);
-    console.log('formData', Object.fromEntries(formData));
+    // console.log('data', formData);
+    // console.log('formData', Object.fromEntries(formData));
     await signIn('credentials', {
       ...Object.fromEntries(formData),
       redirect: false,

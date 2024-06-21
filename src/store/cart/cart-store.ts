@@ -41,7 +41,7 @@ export const useCartStore = create<state>()(
       addProductToCart: (product: CartProduct) => {
         const {cart} = get()
   
-        console.log(cart);
+        // console.log(cart);
         
         // 1. REvisar si el producto existe en el carrito con la talla seleccionada
         const productInCart = cart.some(
@@ -87,7 +87,7 @@ export const useCartStore = create<state>()(
       removeProduct:(product:CartProduct) => {
         const {cart} = get()
 
-        console.log('remove',product);
+        // console.log('remove',product);
         const removeProductInCart = cart.filter( (item) => item.id !== product.id || item.size !== product.size)
         
         set({cart: removeProductInCart})

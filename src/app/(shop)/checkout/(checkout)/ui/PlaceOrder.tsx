@@ -38,7 +38,7 @@ export const PlaceOrder = () => {
     // console.log({productsToOrder,address});
     
     const resp =  await placeOrder(productsToOrder,address)
-    console.log('resp',resp);
+    // console.log('resp',resp);
     if (!resp.ok) {
       setIsPlacingOrder(false)
       setErrorMessage(resp.message)
