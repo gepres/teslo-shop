@@ -1,4 +1,4 @@
-import { OrderStatus, PayPalButton, QuantitySelector, Title } from "@/components";
+import { OrderStatus, PayPalButton, ProductImage, QuantitySelector, Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Link from "next/link";
 import Image from 'next/image'
@@ -51,7 +51,7 @@ export default async function OrdersIdPage({ params }: Props) {
             {
               order!.OrderItem.map((item, index) => (
                 <div key={index} className="flex mb-5">
-                  <Image src={`/products/${item.product.ProductImage[0].url}`} width={100} height={100} style={{ width: '100px', height: '100px' }} alt={item.product.title} className="mr-5 rounded-none" />
+                  <ProductImage src={item.product.ProductImage[0].url} width={100} height={100} style={{ width: '100px', height: '100px' }} alt={item.product.title} className="mr-5 rounded-none" />
 
                   <div>
                     <p>{item.product.title}</p>
