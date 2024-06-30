@@ -69,7 +69,7 @@ export const AddressForm = ({countries, userStoredAddress = {}}:Props) => {
     if(address.firstName) {
       reset(address)
     }
-  }, [])
+  }, [address, reset])
 
   const rules = {
     firstName:{

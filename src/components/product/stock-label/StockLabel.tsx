@@ -17,14 +17,14 @@ export const StockLabel = ({slug}:Props) => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
+    const getStock = async () => {
+      const instock = await getStockBySlug(slug)
+      setStock(instock)
+      setIsLoading(false)
+    }
      getStock()
-  },[])
+  },[slug])
 
-  const getStock = async () => {
-    const instock = await getStockBySlug(slug)
-    setStock(instock)
-    setIsLoading(false)
-  }
 
   return (
     <>
