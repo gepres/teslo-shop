@@ -3,6 +3,7 @@ import { useCartStore } from "@/store";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { currencyFormat } from '../../../../../utils/currencyFormat';
+import { ProductImage } from "@/components";
 
 
 export const ProductsInCart = () => {
@@ -24,7 +25,7 @@ export const ProductsInCart = () => {
       {
         productsInCart.map(item => (
           <div key={`${item.slug}-${item.size}`} className="flex mb-5">
-            <Image src={`/products/${item.image}`} width={100} height={100} style={{ width: '100px', height: '100px' }} alt={item.title} className="mr-5 rounded-none" />
+            <ProductImage src={item.image} width={100} height={100} style={{ width: '100px', height: '100px' }} alt={item.title} className="mr-5 rounded-none" />
 
             <div>
               <span className="">

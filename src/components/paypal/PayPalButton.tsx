@@ -64,6 +64,9 @@ export const PayPalButton = ({amount,orderId}:Props) => {
   }
 
   return (
-    <PayPalButtons createOrder={createOrder} onApprove={onApprove} /> 
+
+    <div className="relative z-0">
+      <PayPalButtons createOrder={createOrder} onApprove={onApprove} /> 
+    </div>
   )
 }

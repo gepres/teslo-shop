@@ -13,6 +13,7 @@
     "@paypal/react-paypal-js": "^8.5.0",
     "@prisma/client": "^5.12.1",
     "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.2.0",
     "clsx": "^2.1.0",
     "next": "14.1.1",
     "next-auth": "^5.0.0-beta.18",
